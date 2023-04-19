@@ -31,37 +31,50 @@
     </head>
     
     <body>
-        <dialog>
-            <div class="popup_content">
-                <h2> CGV 리뉴얼 프로젝트 </h2>
-                <p> 본 사이트는 팀 프로젝트 포트폴리오 사이트입니다. </p>
-                <p> CGV와는 무관함을 안내드립니다. </p>
-                <p> 이 사이트에 사용된 이미지의 저작권은 CGV에 있으므로, 무단으로 사용할 수 없습니다. </p>
-                <p> 제작기간 : 2022.11.01. - 2022.12.22. </p>
-                <p> 특징 : html, css (float, position, transition, transform), vanilla javascript (이벤트, 반복문, 함수) </p>
-                <p> 구현 완료 페이지 : 메인페이지 </p>
-                <p> 기획서 : <a href="https://drive.google.com/file/d/1KnURbMzCBJ8kHk6zfLbx-RPXAgjvNDEO/view?usp=share_link" target="_blank" class="popup_proposal"> CGV 리뉴얼 프로젝트 기획서 보기 </a> </p>
-                <p> github : <a href="https://github.com/HyeonJinSon/CGV-Renewal-Project.git" target="_blank" class="popup_proposal"> CGV 리뉴얼 프로젝트 github 방문하기 </a> </p>
-                <br>
-                <p> 팀원 : 손*진, 박*지, 윤*혁, 홍*헌 </p>
-                <p> 주요 파트별 업무분장 : 공동 기획 </p>
-                <p> 디자인 및 구현 </p>
-                <p> <strong> - 헤더, 우측 하단 버튼 : 손*진  </strong></p>
-                <p> - 무비차트 : 홍*헌 </p>
-                <p> - 비디오 슬라이드 및 이벤트, PS : 박*지 </p>
-                <p> - 특별관, 푸터 : 윤*혁 </p>  
-
-                <form action="">
-                    <label for="daycheck"> 오늘 하루 보지 않기 </label>
-                    <input type="checkbox" id="daycheck">                    
-                </form>
-  
-            </div>
-            <div class="popup_close">
-                <p> 닫기</p> 
-            </div>  
-        </dialog>
-
+                <!-- portfolio notice -->
+                <dialog>
+                    <div class="modal_box">
+                      <div class="modal_list">
+                        <h1>본 사이트는 개인 포트폴리오 사이트 입니다.</h1>
+                        <hr />
+                        <h2>※ Samsung Display와는 무관함을 안내드립니다.</h2>
+                        <h2>※ 원활한 화면구현을 위해 최신 Browser를 사용해주세요.</h2>
+                        <h2>※ 이 사이트에 사용된 이미지의 저작권은 CGV에 있으므로, 무단으로 사용할 수 없습니다.</h2>
+                        <h2>※ 과정 초기 작품으로 기초문법을 활용했습니다.</h2>
+                        <hr />
+              
+                        <div class="modal_info">
+                          <p><strong>제작기간 :</strong> 2022.11.01. - 2022.12.22.</p>
+                          <p><strong>특징 :</strong> html, css, javascript</p>
+                          <p><strong>구현 완료 페이지 :</strong> <a href="index.html">메인페이지</a></p>
+                          <p><strong>팀원 :</strong> 손*진(팀장), 박*지, 윤*혁, 홍*헌</p>
+                          <p><strong>기획서 :</strong> <a href="https://drive.google.com/file/d/1EJTLliM89Nd70wRsxcsPIcdGhMntVXlt/view?usp=share_link" target="_blank" class="popup_proposal"> CGV 리뉴얼 프로젝트 기획서 보기 </a> </p>
+                          <p><strong>디자인 :</strong> <a href="https://www.figma.com/file/SK4V6ieZ1RuFtkcobm3l2b/CGV-%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0%3A1&t=vdIS6OAvOwXSUEjc-1" target="_blank" class="popup_proposal"> CGV 리뉴얼 프로젝트 디자인 보기 </a> </p>
+                          <p><strong>github :</strong> <a href="https://github.com/HyeonJinSon/CGV-Renewal-Project.git" target="_blank" class="popup_proposal"> CGV 리뉴얼 프로젝트 github 방문하기 </a> </p>
+                        <hr />
+                        <div class="modal_info_part">
+                          <strong>파트 업무분장</strong>
+                          <p>기획 : 공동 기획</p>
+                          <p>디자인 및 구현: 파트 담당자</p>
+                          <br/>
+                          <p><strong> 헤더, 우측 하단 버튼 : 손*진 </strong></p>
+                          <p>무비차트 : 홍*헌</p>
+                          <p>비디오 슬라이드 및 이벤트, PS : 박*지</p>
+                          <p>특별관, 푸터 : 윤*혁</p>
+                        </div>
+                        <hr />
+                        <button>
+                          <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <div class="popup_check">
+                          <label for="oneday_close">오늘 하루 보지않기</label>
+                          <input type="checkbox" id="oneday_close" />
+                        </div>
+                      </div>
+                    </div>
+                  </dialog>
+                  <!-- end portfolio notice -->
+          
         <!-- ------------- 손현진 파트 START ------------- -->
         <div class="head_ad">
             <div class="head_ad_content">
