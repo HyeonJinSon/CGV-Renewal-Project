@@ -1,63 +1,75 @@
-/*--------------- S popup---------------*/
-dialog{
-    position: fixed;
-    top: 100px;
-    left: 100px;
+/*--------------- S portfolio notice ---------------*/
+dialog {
     width: 500px;
-    height: 600px;
-    z-index: 20;
-    border: 5px solid #E72B20;
-    border-radius: 20px;
+    position: fixed;
+    left: -50vw;
+    top: 17.78vh;
     background: #fff;
-    margin: 0;
-}
-dialog strong {
-    font-weight: 700;
-}
-.popup_content{
-    margin: 30px;
-}
-.popup_content h2{
-    line-height: 2;
-}
-.popup_content p {
+    border: 7px solid transparent;
+    border-radius: 5px;
     font-size: 14px;
-    line-height: 24px;
-}
-.popup_content form {
-    font-size: 14px;
-    margin-top: 10px;
-    text-align: right;
-}
-.popup_content p:nth-of-type(3)::after{
-    content: '';
-    display: block;
-    height: 1px;
-    width: 100%;
-    background: #E72B20;
-    margin: 20px auto;
-}
-.popup_content .popup_proposal {
-    color: #EF642F;
-    font-weight: 700;
-}
-
-
-.popup_close {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #E72B20;
+    z-index: 100;
+    border: 3px solid #E72B20;
+    padding: 20px 30px;
+  }
+  .modal_box .warning {
+    font-size: 16px;
+    line-height: 27px;
+    padding-top: 15px;
+  }
+  .modal_box h1 {
+    font-size: 17px;
     text-align: center;
-    padding: 10px 0;
-}
-.popup_close p {
-    font-weight: 700;
-    color: #fff;
+    font-weight: bold;
+    color: #D74357;
+  }
+  .modal_box h2 {
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+    font-weight: bold;
+  }
+  .modal_box h3 {
+    padding-bottom: 15px;
+  }
+  .modal_box hr {
+    border: none;
+    border-bottom: 1px solid #E72B20;
+    margin: 14px 0;
+  }
+  .modal_box p {
+    margin: 10px 0 10px;
+  }
+  .modal_info_part > strong {
+    margin: 10px 0 10px;
+  }
+  .modal_box strong {
+    font-weight: bold;
+  }
+  .modal_box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
     cursor: pointer;
-}
-/*--------------- E popup---------------*/
+    border: none;
+    background: #fff;
+  }
+  .popup_check {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+  }
+  dialog p{
+    font-size: 14px;
+  }
 
 /*--------------- 손현진 파트 ---------------*/
 /*--------------- S head Ad ---------------*/
@@ -192,10 +204,10 @@ nav.active{
     position: fixed;
     left: 0; right: 0; top: 0;
 }
-nav.active > li h3{
+nav.active .nav_menu > li h3{
     color: #fff;
 }
-nav.active > li:hover h3{
+nav.active .nav_menu > li:hover h3{
     color: #fff; font-weight: bold;
     transition: 0.5s;
 }
