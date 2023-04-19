@@ -1,45 +1,42 @@
 /*--------------- S popup---------------*/
-let popupModal = document.querySelector('dialog'),
-    popupClose = popupModal.querySelector('.popup_close'),
-    dayCheck = document.querySelector('#daycheck');
+//open popup
+let popupDialog = document.querySelector("dialog"),
+    dayCheck = document.querySelector("#oneday_close"),
+    popupClose = popupDialog.querySelector("button");
 
-    /* if(document.cookie.search('cgvpf') > -1) {
-        popupModal.setAttribute('open','');
-    } */
+function setCookie(name, value, day) {
+    let date = new Date();
+    date.setDate(date.getDate() + day);
+    document.cookie = `${name}=${value};expires=${date.toUTCString()}`;
+}
 
-    function setCookie(name,value,day){
-        let date = new Date();
-        date.setDate(date.getDate()+day);
-        document.cookie = `${name}=${value};expires=${date.toUTCString()}`;
+//check cookie
+function checkCookie(name) {
+    let cookieArr = document.cookie.split(";");
+    let visited = false;
+
+    for (let cookie of cookieArr) {
+    if (cookie.search(name) > -1) {
+        visited = true;
+        break;
+    }
     }
 
-    function checkCookie(name){
-        let cookieArr = document.cookie.split(';');
-
-        let visited = false;
-
-        for(let cookie of cookieArr){
-            if(cookie.search(name) > -1){
-                visited = true;
-                break;
-            }
-        }
-	console.log(visited);
-        if(visited == false){
-            popupModal.setAttribute('open','');
-        }
+    if (!visited) {
+        popupDialog.setAttribute("open", "");
     }
+}
+checkCookie("ABC");
 
-    checkCookie('cgvpf');
-
-    popupClose.addEventListener('click',()=>{
-        if(dayCheck.checked){
-            setCookie('cgvpf','home',1);
-        }else{
-            setCookie('cgvpf','home',-1);
-        }
-        popupModal.removeAttribute('open');
-    });
+//close
+popupClose.addEventListener("click", () => {
+    popupDialog.removeAttribute("open");
+    if (dayCheck.checked) {
+        setCookie("ABC", "home", 1);
+    } else {
+        setCookie("ABC", "home", -1);
+    }
+});
 /*--------------- E popup---------------*/
 
 
@@ -57,7 +54,7 @@ for(sM of subMenu){
 		subMenuHeight = sM.offsetHeight;
 	};
 }
-console.log(subMenuHeight);
+// console.log(subMenuHeight);
 
 for(mM of mainMenu){
 	mM.addEventListener('mouseenter',()=>{
